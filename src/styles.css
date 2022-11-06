@@ -2,26 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/******************************************
-/* CSS
-/*******************************************/
 
-/* Box Model Hack */
-*{
-  box-sizing: border-box;
+
+
+body{
+  background-image: linear-gradient();
 }
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
-  height: 400px;
-}
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
