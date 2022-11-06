@@ -13,78 +13,68 @@
 	<body>
 
 		<div> <!--content wrapper-->
+			<div class="navbar bg-base-100">
 
-			<div> <!-- Nav bar-->
+				<div class="navbar-start">
+					<button class="btn btn-ghost btn-circle">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+					</button>
+					<button class="btn btn-ghost btn-circle">
+						
+						<div class="indicator">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+							<span class="badge badge-xs badge-primary indicator-item"></span>
+						</div>
+						
+					</button>
+				</div>
 				
-				<nav>
-					<div>
-						<h1><a href="/">NASA P.O.T.D</a></h1>
+				<div class="navbar-center">
+					<a class="btn btn-ghost normal-case text-xl">Litchfield Stargazer Society</a>
+				</div>
+				
 
+				<div class="navbar-end">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost btn-circle">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+						</label>
+						<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+							<li><a>Homepage</a></li>
+							<li><a>Portfolio</a></li>
+							<li><a>About</a></li>
+						</ul>
 					</div>
+				</div>
 
-					<ul>
-						<li>
-							<a href="#">
-								<span>Home</span>
+			</div>
 
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>About</span>
-								
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Contact</span>
-								
-							</a>
-						</li>
-					</ul>
-				</nav>
 
-			</div> <!--- end nav -->
 
 			<main>
 				<div>
-					<a href="#">Login</a>
-					<a href="#">Signup</a>
+					<div class="container mx-auto">
+						<h1 class="text-center">Picture of the Day</h1>
+
+					</div>
+					<input type="date" name="" value="">
+					<button id="mediaBtn" type="button" name="button">Get Media</button>
+			
+					<h2>Name</h2>
+					<span>
+						
+					</span>
+					<img src="" alt="">
+					<iframe src="" frameborder="0"></iframe>
+					<h3>Description</h3>
+					
+					<p>
+			
+					</p>
+					
+
 				</div>
 
-				<header>
-					<h2>Today's Picture of the Day</h2>
-					<h3>For Ninjas</h3>
-				</header>
-
-				<div>
-					<h4>Latest Pictures</h4>
-
-					<div>
-						<!--- cards go here-->
-						<div>
-							<img src="" alt="">
-							<div>
-								<span>Picture Title</span>
-								<span>Picture taken by:</span>
-							</div>
-						</div>
-
-					</div>
-
-					<h4>Most Popular</h4>
-					<div>
-					<!--- cards go here-->
-
-					</div>
-
-					<div>
-						<div>
-							Load More
-						</div>
-					</div>
-
-				</div>
 
 			</main>
 
@@ -93,23 +83,6 @@
 
 
 		
-		<!--- First version below-->
-		<span>earlier</span>
-		<h1>Picture of the Day</h1>
-		<input type="date" name="" value="">
-		<button type="button" name="button">Get Media</button>
-
-		<h2>Name</h2>
-		<span>
-			
-		</span>
-		<img src="" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3>Description</h3>
-		
-		<p>
-
-		</p>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>

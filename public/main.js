@@ -2,7 +2,28 @@
 
 //Leon Class 27 about 1:20 minutes or so
 
-document.querySelector('button').addEventListener('click', getDate)
+document.querySelector('#mediaBtn').addEventListener('click', getDate)
+
+// https://api.nasa.gov/planetary/apod?api_key=aYmOC1DdrReJnOfgEjvWUgf8Du8wXR1VATNKFiRj
+
+function picOfDay(){
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=aYmOC1DdrReJnOfgEjvWUgf8Du8wXR1VATNKFiRj`)
+    .then( res => res.json() )
+    .then( data => {
+      console.log(data)
+      
+      if( data.media_type === "image"){
+        document.querySelector('img').src = data.hdurl
+      }else if(data.media_type === 'video'){
+        document.querySelector('iframe').src = data.url
+      }
+      
+      document.querySelector('span').innerText = data.copyright
+      document.querySelector('p').innerText = data.explanation
+    })
+
+}
+
 
 function getDate () {
 
@@ -25,3 +46,7 @@ function getDate () {
     })
 
 }
+
+
+
+picOfDay()
