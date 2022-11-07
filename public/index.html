@@ -53,36 +53,53 @@
 
 			<main>
 				<div>
-					<div class="container mx-auto">
-						<h1 class="text-center">Picture of the Day</h1>
+					<div class="container mx-auto m-6">
+						<h1 class="text-center">Astronomy Picture of the Day!</h1>
 
 					</div>
-					<input type="date" name="" value="">
-					<button id="mediaBtn" type="button" name="button">Get Media</button>
+
+					
 			
-					<h2>Name</h2>
-					<span>
+					<div class="text-center m-6">
+						<!-- <h2>Name:</h2> -->
+						<span id="apodName"></span>
+
+
+					</div>
+
+					<div class="text-center flex justify-content m-6">
+						<div>
+							<img src="" alt="">
+
+						</div>
+						<div class="mx-auto">
+							<iframe src="" frameborder="0"></iframe>
+						</div>
+
+					</div>
+
+					<div class="text-center m-6 p-2">
+						<input type="date" name="" value="" id="dateField">
+						<!-- <button id="mediaBtn" type="button" name="button">Get Media</button> -->
+
+						<button id="mediaBtn" class="bg-sky-500 hover:bg-purple-800 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded shadow">
+							Submit
+						</button>
+
+					</div>
+
+					<div class="text-center m-6 p-4 bg-stone-700 rounded-lg">
+						<h3 class="">Description</h3>
 						
-					</span>
-					<img src="" alt="">
-					<iframe src="" frameborder="0"></iframe>
-					<h3>Description</h3>
-					
-					<p>
-			
-					</p>
-					
+						<p class="m-4" id="apodDescription"></p>
+
+					</div>
 
 				</div>
-
 
 			</main>
 
 		</div>
-
-
-
-		
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
