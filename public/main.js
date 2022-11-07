@@ -39,8 +39,16 @@ function getDate () {
       
       if( data.media_type === "image"){
         document.querySelector('img').src = data.hdurl
+        document.querySelector('iframe').classList.add('hidden')
+
       }else if(data.media_type === 'video'){
+        if( document.querySelector('iframe').classList.contains('hidden')){
+          document.querySelector('iframe').classList.toggle('hidden')
+
+        }
+
         document.querySelector('iframe').src = data.url
+        document.querySelector('img').src = ''
       }
       
       document.querySelector('#apodName').innerText = `"${data.title}"`
