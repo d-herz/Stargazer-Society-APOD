@@ -38,12 +38,11 @@ function getDate () {
       console.log(data)
       
       if( data.media_type === "image"){
-        if( document.querySelector('img').classList.contains('hidden')){
-          document.querySelector('img').classList.toggle('hidden')
+        if( document.querySelector('#apodImg').classList.contains('hidden')){
+          document.querySelector('#apodImg').classList.toggle('hidden')
         }
 
-
-        document.querySelector('img').src = data.hdurl
+        document.querySelector('#apodImg').src = data.hdurl
         document.querySelector('iframe').classList.add('hidden')
 
       }else if(data.media_type === 'video'){
@@ -53,7 +52,7 @@ function getDate () {
         }
 
         document.querySelector('iframe').src = data.url
-        document.querySelector('img').classList.add('hidden')
+        document.querySelector('#apodImg').classList.add('hidden')
       }
       
       document.querySelector('#apodName').innerText = `"${data.title}"`
