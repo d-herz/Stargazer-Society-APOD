@@ -38,17 +38,22 @@ function getDate () {
       console.log(data)
       
       if( data.media_type === "image"){
+        if( document.querySelector('img').classList.contains('hidden')){
+          document.querySelector('img').classList.toggle('hidden')
+        }
+
+
         document.querySelector('img').src = data.hdurl
         document.querySelector('iframe').classList.add('hidden')
 
       }else if(data.media_type === 'video'){
+
         if( document.querySelector('iframe').classList.contains('hidden')){
           document.querySelector('iframe').classList.toggle('hidden')
-
         }
 
         document.querySelector('iframe').src = data.url
-        document.querySelector('img').src = ''
+        document.querySelector('img').classList.add('hidden')
       }
       
       document.querySelector('#apodName').innerText = `"${data.title}"`
