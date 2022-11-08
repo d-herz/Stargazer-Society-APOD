@@ -5,7 +5,8 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Nasa P.O.T.D</title>
+		<title>Litchfield Stargazer Society</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="star1.png"/>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="styles.css">
@@ -15,8 +16,9 @@
 		<div class="bg-base-100/25" > <!--content wrapper-->
 			<div class="navbar bg-base-100/50">
 
-				<div class="navbar-start">
-					<button class="btn btn-ghost btn-circle">
+				<div class="navbar-start px-2">
+					<img src="telescope.png" width="30px" class="" alt="" />
+					<!-- <button class="btn btn-ghost btn-circle">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
 					</button>
 					<button class="btn btn-ghost btn-circle">
@@ -26,34 +28,18 @@
 							<span class="badge badge-xs badge-primary indicator-item"></span>
 						</div>
 						
-					</button>
+					</button> -->
 				</div>
 				
 				<div class="navbar-center">
-					<img src="star1.png" width="25px" class="removeImage" alt="Remove this image" />
+					<img src="star1.png" width="25px" class="" alt="" />
 					<a class="btn btn-ghost normal-case text-xl">Litchfield Stargazer Society</a>
-					<img src="star1-alt.png" width="25px" class="removeImage" alt="Remove this image" />
+					<img src="star1-alt.png" width="25px" class="" alt="" />
 				</div>
 				
-
 				<div class="navbar-end">
-					<div class="dropdown">
-						<label tabindex="0" class="btn btn-ghost btn-circle">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-						</label>
-						<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-							<li><a>Homepage</a></li>
-							<li><a>Portfolio</a></li>
-							<li><a>About</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-
-			<main>
-				<div>
-					<select data-choose-theme>
+					<select data-choose-theme class="select select-secondary w-full max-w-xs">
+						<option disabled selected>Choose Theme</option>
 						<option value="">Default</option>
 						<option value="forest">Dark</option>
 						<option value="luxury">Lux</option>
@@ -64,10 +50,29 @@
 						<option value="aqua">Night Sky</option>
 					</select>
 
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost btn-circle">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+						</label>
+						<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+							<li><a>Homepage</a></li>
+							<li><a>Portfolio</a></li>
+							<li><a>About</a></li>
+						</ul>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<main>
+				<div>
+
 					<div class="container mx-auto m-4">
 						<h1 class="text-center text-4xl">Astronomy Picture of the Day</h1>
 						<span></span>
-
 					</div>
 
 					<!-- APOD Title -->
@@ -92,14 +97,16 @@
 
 					<!-- Date input & button container -->
 					<div class="text-center m-1 p-2">
-						<input type="date" name="" value="" id="dateField">
-						<button id="mediaBtn" class="bg-sky-500 hover:bg-purple-800 text-gray-800 font-semibold px-2 border border-gray-400 rounded-sm shadow">
+						<!-- <input type="date" name="" value="" id="dateField"> -->
+						<input type="date" id="dateField" class="input input-bordered input-primary w-full max-w-xs" />
+						<!-- <button id="mediaBtn" class="bg-sky-500 hover:bg-purple-800 text-gray-800 font-semibold px-2 border border-gray-400 rounded-sm shadow">
 							Submit
-						</button>
+						</button> -->
+						<button id="mediaBtn" class="btn btn-outline">Submit</button>
 					</div>
 
 					<!-- Description -->
-					<div class="text-center m-6 p-4 bg-stone-700/75 rounded-lg">
+					<div class="text-center m-6 p-4 bg-base-100/75 rounded-lg">
 						<h3 class="">Description</h3>
 						<p class="m-4" id="apodDescription"></p>
 					</div>
@@ -120,3 +127,28 @@
 		<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+<!-- <div class="navbar bg-base-300 rounded-box">
+  <div class="flex-1 px-2 lg:flex-none">
+    <a class="text-lg font-bold">daisyUI</a>
+  </div> 
+  <div class="flex justify-end flex-1 px-2">
+    <div class="flex items-stretch">
+      <a class="btn btn-ghost rounded-btn">Button</a>
+
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost rounded-btn">Dropdown</label>
+        <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+          <li><a>Item 1</a></li> 
+          <li><a>Item 2</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div> -->
