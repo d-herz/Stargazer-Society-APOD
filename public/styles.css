@@ -2913,13 +2913,13 @@ html {
   outline-offset: 2px;
 }
 
-.select-secondary {
+.select-primary {
   --tw-border-opacity: 1;
-  border-color: hsl(var(--s) / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
 }
 
-.select-secondary:focus {
-  outline: 2px solid hsl(var(--s));
+.select-primary:focus {
+  outline: 2px solid hsl(var(--p));
 }
 
 .select-disabled,
@@ -3162,6 +3162,10 @@ html {
   margin-right: 1.5rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -3188,10 +3192,6 @@ html {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-52 {
