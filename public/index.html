@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="luxury" lang="en">
+<html data-theme="" lang="en">
 	<head>
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
@@ -12,7 +12,7 @@
 	</head>
 	<body>
 
-		<div> <!--content wrapper-->
+		<div class="bg-base-100/25" > <!--content wrapper-->
 			<div class="navbar bg-base-100/50">
 
 				<div class="navbar-start">
@@ -53,22 +53,36 @@
 
 			<main>
 				<div>
+					<select data-choose-theme>
+						<option value="">Default</option>
+						<option value="forest">Dark</option>
+						<option value="luxury">Lux</option>
+						<option value="synthwave">Galactic</option>
+						<option value="cupcake">cupcake</option>
+						<option value="corporate">corp</option>
+						<option value="garden">garden</option>
+						<option value="aqua">Night Sky</option>
+					</select>
+
 					<div class="container mx-auto m-4">
-						<h1 class="text-center text-3xl">Astronomy Picture of the Day!</h1>
+						<h1 class="text-center text-4xl">Astronomy Picture of the Day</h1>
 						<span></span>
 
 					</div>
 
 					<!-- APOD Title -->
 					<div class="text-center">
-						<span id="apodName"></span>
+						<span id="apodName" class="text-xl font-semibold"></span>
 					</div>
 					
 					<!-- Image/Video Container -->
 					<div class="text-center flex justify-content mt-1 mx-6 pt-1 px-6 ">
 						
-						<div class="">
-							<img class="mx-auto rounded-md border-4 border-zinc-700" id="apodImg" src="" alt="">
+						<div class="mx-auto">
+							<a id="apodLink" href="">
+								<img class="mx-auto rounded-md border-4 border-neutral-content " id="apodImg" src="" alt="">
+
+							</a>
 						</div>
 
 						<div class="mx-auto">
@@ -79,30 +93,30 @@
 					<!-- Date input & button container -->
 					<div class="text-center m-1 p-2">
 						<input type="date" name="" value="" id="dateField">
-						<!-- <button id="mediaBtn" type="button" name="button">Get Media</button> -->
-
 						<button id="mediaBtn" class="bg-sky-500 hover:bg-purple-800 text-gray-800 font-semibold px-2 border border-gray-400 rounded-sm shadow">
 							Submit
 						</button>
-
 					</div>
 
+					<!-- Description -->
 					<div class="text-center m-6 p-4 bg-stone-700/75 rounded-lg">
 						<h3 class="">Description</h3>
-						
 						<p class="m-4" id="apodDescription"></p>
-
 					</div>
 
 				</div>
 
 			</main>
 
-			<footer>
-
+			<footer class="footer footer-center p-4 bg-base-100/50 text-base-content">
+				<div>
+					<p>Copyright © 2022 </p>
+					<p>Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project</p>
+				</div>
 			</footer>
 		</div>
 
 		<script type="text/javascript" src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 	</body>
 </html>

@@ -1,13 +1,12 @@
-//The user will enter a date. Use that date to get the NASA picture of the day from that date! https://api.nasa.gov/
+// https://api.nasa.gov/
 
-//Leon Class 27 about 1:20 minutes or so
 
+//Set Date Field to Autopopulate with today's date
 document.getElementById('dateField').valueAsDate = new Date();
-
+//Event listener for calling getDate fn and retreiving APOD
 document.querySelector('#mediaBtn').addEventListener('click', getDate)
 
-// https://api.nasa.gov/planetary/apod?api_key=aYmOC1DdrReJnOfgEjvWUgf8Du8wXR1VATNKFiRj
-
+//Set Pic of Day as today's pic on page load
 function picOfDay(){
   fetch(`https://api.nasa.gov/planetary/apod?api_key=aYmOC1DdrReJnOfgEjvWUgf8Du8wXR1VATNKFiRj`)
     .then( res => res.json() )
@@ -15,9 +14,20 @@ function picOfDay(){
       console.log(data)
       
       if( data.media_type === "image"){
-        document.querySelector('img').src = data.hdurl
+        if( document.querySelector('#apodImg').classList.contains('hidden')){
+          document.querySelector('#apodImg').classList.toggle('hidden')
+        }
+        document.querySelector('#apodImg').src = data.hdurl
+        document.querySelector('#apodLink').href = data.url
+        document.querySelector('iframe').classList.add('hidden')
+
       }else if(data.media_type === 'video'){
+        if( document.querySelector('iframe').classList.contains('hidden')){
+          document.querySelector('iframe').classList.toggle('hidden')
+        }
+
         document.querySelector('iframe').src = data.url
+        document.querySelector('#apodImg').classList.add('hidden')
       }
       
       document.querySelector('#apodName').innerText = `"${data.title}"`
@@ -27,11 +37,12 @@ function picOfDay(){
 }
 
 
-function getDate () {
+//function for fetching historical APOD's
+function getDate(){
 
   let date = document.querySelector('input').value
   date = "date=" + date
-  //notice the ? in the URL with query params after (date, API key, etc. )
+
   fetch(`https://api.nasa.gov/planetary/apod?${date}&api_key=aYmOC1DdrReJnOfgEjvWUgf8Du8wXR1VATNKFiRj`)
     .then( res => res.json() )
     .then( data => {
@@ -43,14 +54,14 @@ function getDate () {
         }
 
         document.querySelector('#apodImg').src = data.hdurl
+        document.querySelector('#apodLink').href = data.url
+        console.log(data.url)
         document.querySelector('iframe').classList.add('hidden')
 
       }else if(data.media_type === 'video'){
-
         if( document.querySelector('iframe').classList.contains('hidden')){
           document.querySelector('iframe').classList.toggle('hidden')
         }
-
         document.querySelector('iframe').src = data.url
         document.querySelector('#apodImg').classList.add('hidden')
       }
