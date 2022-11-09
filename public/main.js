@@ -45,7 +45,6 @@ function picOfDay(){
       document.querySelector('#apodName').innerText = `"${data.title}"`
       document.querySelector('#apodDescription').innerText = data.explanation
     })
-
 }
 
 
@@ -92,7 +91,6 @@ function getDate(){
       document.querySelector('#apodName').innerText = `"${data.title}"`
       document.querySelector('#apodDescription').innerText = data.explanation
     })
-
 }
 
 picOfDay()
