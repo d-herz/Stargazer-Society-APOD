@@ -1,8 +1,3 @@
-# Stargazer-Society-APOD
-Web App with NASA API integration for the Litchfield StarGazers Society 
-
-
-
 
 <h1 align="center"> Litchfield Stargazer Society </h1>
 
@@ -12,10 +7,10 @@ Web App with NASA API integration for the Litchfield StarGazers Society
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-This informative and thought-provoking project was created for a local group of astronomy and stargazing enthusiasts. The web app features NASA API integration through the NASA Open API Project. Users will see an amazing new astronomy picture or video each day with a description detailing the displayed media. A form is also provided allowing users to view historical A.P.O.D's (as far back as 06-16-1995!). Additional features include user-switchable themes for 'light', 'dark', and other space-oriented themes. The styling was created with TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar.
+This informative and thought-provoking project was created for a local group of astronomy and stargazing enthusiasts. Every day an amazing new astronomy picture or video with a description is showcased. A date form is also provided allowing users to view historical A.P.O.D's (as far back as 06-16-1995!). Additional features include user-switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created with the help of TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar. The web app features NASA API integration through the NASA Open API Project.
 </p>
 <p align="left">
-This project was created using frontend JavaScript, TailwindCSS, and HTML5
+This project was created using frontend JavaScript, TailwindCSS, and HTML.5
 </p>
 
 <p align="left">
@@ -25,12 +20,9 @@ Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supp
 <h3 align="left">Quick facts about this project:</h3>
 <p align="left">
 <ul>
-<li> Front-end coded with HTML5, CSS3, & JavaScript</li>
-<li> Server-side API coded with Node.js/Express </li> 
-<li> This page is Hosted on <a href="https://app.netlify.com/drop"> Netlify </a> </li> 
-<li> The API is hosted on <a href="https://heroku.com/">Heroku</a> </li>
-<li> Accesses a <a href="https://www.mongodb.com/">MongoDB</a> with over 100 quotes from the show (and growing!)</li>
-<!----- <li> </li> ---->
+  <li> Front-end coded with HTML5, CSS3, & JavaScript</li>
+  <li> Astronomy Pictures provided by <a href="https://api.nasa.gov//">NASA's Open API</a> project</li>
+
 </ul>
 </p>
 
