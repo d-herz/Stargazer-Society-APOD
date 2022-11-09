@@ -12,8 +12,9 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-
-		<div class="bg-base-100/25" > <!--content wrapper-->
+		<!--Content wrapper-->
+		<div class="bg-base-100/25" > 
+			<!-- NAVBAR -->
 			<div class="navbar bg-base-100/50">
 
 				<div class="navbar-start px-2">
@@ -38,8 +39,8 @@
 				</div>
 				
 				<div class="navbar-end px-2">
-					
-					<select data-choose-theme class="select select-primary mr-4 pr-0 max-w-xs min-h-0 max-h-8">
+					<!-- Drop-down for choosing themes -->
+					<select data-choose-theme class="select select-primary mr-4 pr-7 max-w-xs min-h-0 max-h-8">
 						<option disabled selected>Choose Theme</option>
 						<option value="">Default</option>
 						<option value="forest">Dark</option>
@@ -71,16 +72,19 @@
 
 			</div>
 
+			<!-- Main Container -->
 			<main>
 				<div>
-
-					<div class="container mx-auto m-4">
+					<!-- Title -->
+					<!-- <div class="container mx-auto m-4 ">
 						<h1 class="text-center text-4xl">Astronomy Picture of the Day</h1>
 						<span></span>
-					</div>
+					</div> -->
 
-					<!-- APOD Title -->
+					<!-- APOD DATE & Title -->
 					<div class="text-center mx-12 my-3 p-4 bg-base-100/50 rounded-lg">
+						<h1 class="text-center mb-3 text-4xl">Astronomy Picture of the Day</h1>
+						<span id="apodDate" class="text-xl font-semibold block"></span>
 						<span id="apodName" class="text-xl font-semibold"></span>
 					</div>
 					
@@ -97,6 +101,7 @@
 						<div class="mx-auto">
 							<iframe src="" width="960" height="540" frameborder="0"></iframe>
 						</div>
+
 					</div>
 
 					<!-- Date input & button container -->
@@ -115,9 +120,8 @@
 					</div>
 
 				</div>
-
 			</main>
-
+			<!-- Footer -->
 			<footer class="footer footer-center p-4 bg-base-100/50 text-base-content">
 				<div>
 					<p>Copyright © 2022 </p>
