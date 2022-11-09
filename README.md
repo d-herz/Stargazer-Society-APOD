@@ -12,8 +12,12 @@ Web App with NASA API integration for the Litchfield StarGazers Society
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-This informative and thought-provoking project was created for a local group of astronomy and stargazing enthusiasts. The web app features NASA API integration through the NASA Open API Project. Users will see an amazing new astronomy picture or video each day with a description detailing the displayed media. A form is also provided, allowing users to view historical A.P.O.D's (as far back as 06-16-1995!) 
+This informative and thought-provoking project was created for a local group of astronomy and stargazing enthusiasts. The web app features NASA API integration through the NASA Open API Project. Users will see an amazing new astronomy picture or video each day with a description detailing the displayed media. A form is also provided allowing users to view historical A.P.O.D's (as far back as 06-16-1995!). Additional features include user-switchable themes for 'light', 'dark', and other space-oriented themes. The styling was created with TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar.
 </p>
+<p align="left">
+This project was created using frontend JavaScript, TailwindCSS, and HTML5
+</p>
+
 <p align="left">
 Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project
 </p>
