@@ -7,33 +7,45 @@
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-Discover the cosmos! Featuring NASA API integration through the NASA Open API Project, each day a different image or photograph of our fascinating universe is showcased along with a brief explanation written by a professional astronomer.<br>
-Created for a local group of astronomy and astro-photography enthusiasts, this project can be enjoyed by all.<br>
-Enjoy a different amazing image every day, or spend hours perusing historical images via the provided date form. Thanks to the NASA APOD API, users can enjoy featured images going back as far as June 16th, 1995!
+Discover the cosmos! Each day a different image or photograph of our fascinating universe is showcased along with a brief explanation written by a professional astronomer.<br>
+</p>
+<p align="left">
+Enjoy an amazing image every day, or spend hours perusing historical images via the provided date form. Thanks to the NASA APOD API, users can enjoy featured images going back as far as June 16th, 1995!
 </p>
 
 <p align="left">
-Additional features include user-switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created with the help of TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar. 
-</p>
-<p align="left">
-This project was created using frontend JavaScript, TailwindCSS, and HTML.5
+Additional features include user-switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created using CSS3 by way of TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar. 
 </p>
 
 <p align="left">
 Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project
 </p>
 
+<h3 align="left">Example Screenshots:</h3>
+
+<h4 align="left" >"Light" & "Dark" themes: </h4>
+
+<p align="center">
+  <img src="https://github.com/d-herz/Stargazer-Society-APOD/blob/main/img/light.png" alt="Light-mode example" width= "375" height="auto"   />
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;   </span>
+  <img src="https://github.com/d-herz/Stargazer-Society-APOD/blob/main/img/dark.png" alt="Dark mode example" width= "375" height="auto"   />
+</p> 
+
+<h4 align="left" >"Galactic" & "Night Sky" themes: </h4>
+<p align="center">
+  <img src="https://github.com/d-herz/Stargazer-Society-APOD/blob/main/img/galactic.png" alt="Galacatic theme example" width= "375" height="auto"   />
+  <span>&nbsp;&nbsp;&nbsp;&nbsp; </span>
+  <img src="https://github.com/d-herz/Stargazer-Society-APOD/blob/main/img/night.png" alt="Night-Sky theme example" width= "375" height="auto"   />
+</p> 
+
 <h3 align="left">Quick facts about this project:</h3>
 <p align="left">
 <ul>
-  <li> Front-end coded with HTML5, CSS3, & JavaScript</li>
+  <li> Coded with HTML5, CSS3, & JavaScript</li>
+  <li> Also uses TailwindCSS, daisyUI, and Node/NPM</li>
   <li> Astronomy Pictures provided by <a href="https://api.nasa.gov//">NASA's Open API</a> project</li>
 
 </ul>
-</p>
-
-<p align="center">
-  <img src="https://github.com/d-herz/family-guy-quotes-client/blob/main/fg-readme.gif" alt="animated" />
 </p>
 
 
@@ -41,11 +53,8 @@ Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supp
 <p align="left">
 I've recently added:
 <ul>
-<li> Quotes from additional cast members </li>
-<li> Mobile and Desktop Responsivity </li>
-<li> Images for quoted characters </li>
-<li> A back-end server API, hosted on Heroku</li> 
-<li> A CRUD based 'Database-builder' site for adding quotes to the MongoDB </li>
+<li>User Switchable Display Themes</li>
+<li>Date form for retrieving historical images</li>
 <!----- <li> </li> ---->
 </ul>
 </p>
