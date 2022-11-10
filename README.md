@@ -7,11 +7,13 @@
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.
+Discover the cosmos! Featuring NASA API integration through the NASA Open API Project, each day a different image or photograph of our fascinating universe is showcased along with a brief explanation written by a professional astronomer.<br>
+Created for a local group of astronomy and astro-photography enthusiasts, this project can be enjoyed by all.<br>
+Enjoy a different amazing image every day, or spend hours perusing historical images via the provided date form. Thanks to the NASA APOD API, users can enjoy featured images going back as far as June 16th, 1995!
 </p>
 
 <p align="left">
-This informative and thought-provoking project was created for a local group of astronomy and stargazing enthusiasts. Every day an amazing new astronomy picture or video with a description is showcased. A date form is also provided allowing users to view historical A.P.O.D's (as far back as 06-16-1995!). Additional features include user-switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created with the help of TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar. The web app features NASA API integration through the NASA Open API Project.
+Additional features include user-switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created with the help of TailwindCSS and daisyUI. Future optimizations include plans for additional information on the astronomy society and an event calendar. 
 </p>
 <p align="left">
 This project was created using frontend JavaScript, TailwindCSS, and HTML.5
