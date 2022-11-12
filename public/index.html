@@ -11,14 +11,15 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body>
+	<body class="w-screen  ">
 		<!--Content wrapper-->
-		<div class="bg-base-100/25" > 
+		<div class="bg-base-100/25 min-h-screen " > 
 			<!-- NAVBAR -->
-			<div class="navbar px-5 bg-base-100/50">
+			<div class="navbar px-5 bg-base-100/50 flex">
 
-				<div class="navbar-start px-2">
-					<img src="telescope.png" width="30px" class="" alt="" />
+				<div class="navbar-start px-2 ">
+
+					<img src="telescope.png" width="30px" class="hidden md:inline " alt="" />
 					<!-- <button class="btn btn-ghost btn-circle">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
 					</button>
@@ -32,13 +33,13 @@
 					</button> -->
 				</div>
 				
-				<div class="navbar-center">
+				<div class="navbar-center ">
 					<img src="star1.png" width="25px" class="" alt="" />
 					<a class="btn btn-ghost normal-case text-xl">Litchfield Stargazer Society</a>
 					<img src="star1-alt.png" width="25px" class="" alt="" />
 				</div>
 				
-				<div class="navbar-end px-2">
+				<div class="navbar-end px-2  ">
 					<!-- Drop-down for choosing themes -->
 					<select data-choose-theme class="select select-primary mr-4 pr-7 max-w-xs min-h-0 max-h-8">
 						<option disabled selected>Choose Theme</option>
@@ -53,7 +54,7 @@
 						<!-- <option value="luxury">Lux</option> -->
 					</select>
 
-					<img src="telescope-alt.png" width="30px" class="" alt="" />
+					<img src="telescope-alt.png" width="30px" class="hidden md:inline" alt="" />
 
 					<!-- <div class="dropdown">
 						<label tabindex="0" class="btn btn-ghost btn-circle">
