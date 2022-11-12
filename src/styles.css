@@ -17,6 +17,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   overflow-x:hidden; /* Gets rid of horizontal scroll */
+  /* background-position: center; */
   
 }
 

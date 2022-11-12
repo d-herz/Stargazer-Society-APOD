@@ -2685,6 +2685,7 @@ body{
   background-attachment: fixed;
   overflow-x:hidden;
   /* Gets rid of horizontal scroll */
+  /* background-position: center; */
 }
 
 .hiddenElement{
