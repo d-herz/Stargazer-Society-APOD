@@ -12,13 +12,15 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="styles.css">
 	</head>
+
 	<body class="w-screen  ">
 		<!--Content wrapper-->
 		<div class="bg-base-100/25 min-h-screen " > 
 			<!-- NAVBAR -->
-			<div class="navbar px-5 bg-base-100/50 ">
 
-				<div class="navbar-start px-2 ">
+			<div class="navbar px-5 bg-base-100/50 flex-wrap md:flex-nowrap justify-center ">
+
+				<div class="navbar-start md:inline-flex px-2 ">
 
 					<img src="telescope.png" width="30px" class="hidden md:inline " alt="" />
 					<!-- <button class="btn btn-ghost btn-circle">
@@ -36,13 +38,14 @@
 				
 				<div class="navbar-center ">
 					<img src="star1.png" width="25px" class="" alt="" />
-					<a class="btn btn-ghost normal-case text-xl">Litchfield Stargazer Society</a>
+					<a class="btn btn-ghost normal-case md:text-xl">Litchfield Stargazer Society</a>
 					<img src="star1-alt.png" width="25px" class="" alt="" />
 				</div>
 				
-				<div class="navbar-end px-2  ">
+
+				<div class="navbar-end px-2 justify-center ">
 					<!-- Drop-down for choosing themes -->
-					<select data-choose-theme class="select select-primary mr-4 pr-7 max-w-xs min-h-0 max-h-8">
+					<select data-choose-theme class="select select-primary pr-7 md:mr-4 mx-auto max-w-xs min-h-0 max-h-8">
 						<option disabled selected>Choose Theme</option>
 						<!-- <option value="">Default</option> -->
 						<option value="forest">Dark</option>
@@ -84,7 +87,7 @@
 					</div> -->
 
 					<!-- APOD DATE & Title -->
-					<div class="text-center mx-12 my-3 p-4 bg-base-100/50 rounded-lg">
+					<div class="text-center md:mx-12 my-3 p-4 bg-base-100/50 rounded-lg">
 						<h1 class="text-center mb-2 text-4xl">Astronomy Picture of the Day</h1>
 						<span id="apodDate" class="text-xl mb-1 italic font-semibold block"></span>
 						<span id="apodName" class="text-xl font-semibold"></span>
@@ -116,7 +119,7 @@
 					</div>
 
 					<!-- Description -->
-					<div class="text-center mx-12 mb-12 mt-6 p-4 bg-base-100/75 rounded-lg">
+					<div class="text-center md:mx-12 mb-12 mt-6 p-4 bg-base-100/75 rounded-lg">
 						<div class="text-center">
 							<!-- <h3 class="">Explanation:</h3> -->
 
