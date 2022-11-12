@@ -25,20 +25,20 @@ function picOfDay(){
       })
       
       if( data.media_type === "image"){
-        if( document.querySelector('#apodImg').classList.contains('hidden')){
-          document.querySelector('#apodImg').classList.toggle('hidden')
+        if( document.querySelector('#apodImg').classList.contains('hiddenElement')){
+          document.querySelector('#apodImg').classList.toggle('hiddenElement')
         }
+        document.querySelector('iframe').classList.add('hiddenElement')
         document.querySelector('#apodImg').src = data.hdurl
         document.querySelector('#apodLink').href = data.url
-        document.querySelector('iframe').classList.add('hidden')
 
       }else if(data.media_type === 'video'){
-        if( document.querySelector('iframe').classList.contains('hidden')){
-          document.querySelector('iframe').classList.toggle('hidden')
+        if( document.querySelector('iframe').classList.contains('hiddenElement')){
+          document.querySelector('iframe').classList.toggle('hiddenElement')
         }
 
+        document.querySelector('#apodImg').classList.add('hiddenElement')
         document.querySelector('iframe').src = data.url
-        document.querySelector('#apodImg').classList.add('hidden')
       }
       
       document.querySelector('#apodDate').innerText = `${newDate}`
@@ -69,22 +69,22 @@ function getDate(){
 
       }else if( data.media_type === "image" ){
         
-        if( document.querySelector('#apodImg').classList.contains('hidden')){
-          document.querySelector('#apodImg').classList.toggle('hidden')
+        if( document.querySelector('#apodImg').classList.contains('hiddenElement')){
+          document.querySelector('#apodImg').classList.toggle('hiddenElement')
         }
 
         document.querySelector('#apodImg').src = data.hdurl
         document.querySelector('#apodLink').href = data.url
-        document.querySelector('iframe').classList.add('hidden')
+        document.querySelector('iframe').classList.add('hiddenElement')
         console.log(data.url)
 
       }else if(data.media_type === 'video'){
 
-        if( document.querySelector('iframe').classList.contains('hidden')){
-          document.querySelector('iframe').classList.toggle('hidden')
+        if( document.querySelector('iframe').classList.contains('hiddenElement')){
+          document.querySelector('iframe').classList.toggle('hiddenElement')
         }
         document.querySelector('iframe').src = data.url
-        document.querySelector('#apodImg').classList.add('hidden')
+        document.querySelector('#apodImg').classList.add('hiddenElement')
 
       }
       document.querySelector('#apodDate').innerText = `${newDate}`

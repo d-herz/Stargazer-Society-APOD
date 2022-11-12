@@ -2691,7 +2691,7 @@ body{
 @media screen  {
 }
 
-.hidden{
+.hiddenElement{
   display: none;
 }
 
