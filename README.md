@@ -18,7 +18,7 @@ Additional features include user-switchable themes for 'light', 'dark', and othe
 </p>
 
 <p align="left">
-Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project
+Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project.
 </p>
 
 <h3 align="left">Example Screenshots:</h3>
