@@ -16,8 +16,8 @@
 	<body class="w-screen  ">
 		<!--Content wrapper-->
 		<div class="bg-base-100/25 min-h-screen" > 
+			
 			<!-- NAVBAR -->
-
 			<div class="navbar px-5 bg-base-100/50 flex-wrap md:flex-nowrap justify-center ">
 
 				<div class="navbar-start md:inline-flex px-2 ">
@@ -37,15 +37,15 @@
 				</div>
 				
 				<div class="navbar-center ">
-					<img src="star1.png" width="25px" class="" alt="" />
-					<a class="btn btn-ghost normal-case md:text-xl">Litchfield Stargazer Society</a>
-					<img src="star1-alt.png" width="25px" class="" alt="" />
+					<img src="star1.png" width="" class=" w-4 md:w-6" alt="" />
+					<a class="btn btn-ghost normal-case md:text-xl px-2">Litchfield Stargazer Society</a>
+					<img src="star1-alt.png" width="" class=" w-4 md:w-6" alt="" />
 				</div>
 				
 
 				<div class="navbar-end px-2 justify-center ">
 					<!-- Drop-down for choosing themes -->
-					<select data-choose-theme class="select select-primary pr-7 md:mr-4 mx-auto max-w-xs min-h-0 max-h-8 text-xs md:text-sm">
+					<select data-choose-theme class="select select-primary pr-7 md:mr-4 mx-auto max-w-xs min-h-0 max-h-6 md:max-h-8 text-xs md:text-sm text-center">
 						<option disabled selected>Choose Theme</option>
 						<!-- <option value="">Default</option> -->
 						<option value="forest">Dark</option>
@@ -87,14 +87,17 @@
 					</div> -->
 
 					<!-- APOD DATE & Title -->
-					<div class="text-center md:mx-12 my-2 md:my-3 p-1 md:p-4 bg-base-100/50 rounded-lg">
-						<h1 class="text-center mb-2 md:text-4xl">Astronomy Picture of the Day</h1>
-						<span id="apodDate" class="md:text-xl mb-1 italic font-semibold block"></span>
-						<span id="apodName" class="md:text-xl font-semibold"></span>
+					<div class="text-center md:mx-12 my-2 mb-4 md:my-3 p-1 md:p-4 bg-base-100/50 rounded-lg">
+
+						<h1 class="text-center mb-2 md:text-4xl font-bold">Astronomy Picture of the Day</h1>
+						
+						<span id="apodDate" class="text-xs md:text-lg mb-1 italic block"></span>
+						
+						<span id="apodName" class="text-base md:text-xl font-semibold"></span>
 					</div>
 					
 					<!-- Image/Video Container -->
-					<div class="text-center flex justify-content mx-6 md:mx-6 p-2 md:pt-1 md:px-6 ">
+					<div class="text-center flex justify-content mx-3 md:mx-6 p-2 md:pt-1 md:px-6 ">
 						
 						<div class="mx-auto">
 							<a id="apodLink" href="">
@@ -111,7 +114,7 @@
 
 					<!-- Date input & button container -->
 					<div class="text-center md:m-1 md:p-2">
-						<input type="date" id="dateField" class="input input-bordered input-primary max-w-xs text-sm h-6 md:h-12" />
+						<input type="date" id="dateField" class="input input-bordered input-primary text-center max-w-xs text-sm h-6 md:h-12" />
 						<!-- <button id="mediaBtn" class="bg-sky-500 hover:bg-purple-800 text-gray-800 font-semibold px-2 border border-gray-400 rounded-sm shadow">
 							Submit
 						</button> -->
@@ -124,7 +127,7 @@
 							<!-- <h3 class="">Explanation:</h3> -->
 
 						</div>
-						<p class="first-line:uppercase first-line:tracking-widest first-line:text-primary m-4" id="apodDescription"></p>
+						<p class="first-line:uppercase first-line:tracking-widest first-line:text-primary text-justify m-5" id="apodDescription"></p>
 					</div>
 
 				</div>
