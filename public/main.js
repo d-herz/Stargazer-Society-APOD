@@ -14,7 +14,6 @@ function picOfDay(){
       // console.log(data)
 
       let dateOg = data.date.split('-') //original date format split into an array
-
       let newDate = [dateOg[1], dateOg[2], dateOg[0]] //reformatting dateOg into US convention
       newDate = newDate.join('/')
 
@@ -61,6 +60,7 @@ function getDate(){
 
       let dateOg = data.date.split('-') //original date format split into an array
       let newDate = [dateOg[1], dateOg[2], dateOg[0]] //reformatting dateOg into US convention
+      newDate = newDate.join('/')
       
       if( !data.media_type ){ 
         //if no media type, then given date is out of range, alert and load today's picture
