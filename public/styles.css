@@ -2502,6 +2502,10 @@ html {
   width: 100vw;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -2735,6 +2739,16 @@ body{
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:w-6\/12 {
+    width: 50%;
+  }
+
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:m-1 {
     margin: 0.25rem;
@@ -2763,10 +2777,6 @@ body{
     display: inline;
   }
 
-  .md\:inline-flex {
-    display: inline-flex;
-  }
-
   .md\:h-12 {
     height: 3rem;
   }
@@ -2777,10 +2787,6 @@ body{
 
   .md\:w-6 {
     width: 1.5rem;
-  }
-
-  .md\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 
   .md\:border-4 {
