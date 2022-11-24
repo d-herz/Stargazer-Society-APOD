@@ -2721,6 +2721,23 @@ body{
   max-width: 10%;
 } */
 
+.first-letter\:float-left::first-letter {
+  float: left;
+}
+
+.first-letter\:mr-2::first-letter {
+  margin-right: 0.5rem;
+}
+
+.first-letter\:text-5xl::first-letter {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.first-letter\:font-bold::first-letter {
+  font-weight: 700;
+}
+
 .first-line\:uppercase::first-line {
   text-transform: uppercase;
 }
