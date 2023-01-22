@@ -1,7 +1,7 @@
 
 <h1 align="center"> Litchfield Stargazer Society </h1>
 
-<h3 align="center">Astronomy Picture of the Day with NASA API Integration</h3>
+<h3 align="center"><a href="https://astronomy-pic-daily.netlify.app/">Astronomy Picture of the Day with NASA API Integration </a></h3>
 
 <!--- <h3 align="center"> <a href="https://family-guy-quotes.netlify.app/">Visit the live site</a></h3> --->
 
