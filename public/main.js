@@ -1,6 +1,5 @@
 // https://api.nasa.gov/
 
-
 //Set Date Field to Autopopulate with today's date
 document.getElementById('dateField').valueAsDate = new Date();
 //Event listener for calling getDate fn and retreiving APOD
@@ -35,11 +34,9 @@ function picOfDay(){
         if( document.querySelector('iframe').classList.contains('hiddenElement')){
           document.querySelector('iframe').classList.toggle('hiddenElement')
         }
-
         document.querySelector('#apodImg').classList.add('hiddenElement')
         document.querySelector('iframe').src = data.url
       }
-      
       document.querySelector('#apodDate').innerText = `${newDate}`
       document.querySelector('#apodName').innerText = `"${data.title}"`
       document.querySelector('#apodDescription').innerText = data.explanation
@@ -47,7 +44,7 @@ function picOfDay(){
 }
 
 
-//function for fetching historical APOD's
+// Function for fetching historical APOD's
 function getDate(){
 
   let date = document.querySelector('input').value //for inserting input value into fetch request string
