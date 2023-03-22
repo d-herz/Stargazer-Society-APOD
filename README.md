@@ -1,5 +1,5 @@
 
-<h1 align="center">Stargazer Society </h1>
+<h1 align="center"><a target="_blank" href="https://astronomy-pic-daily.netlify.app/">Stargazer Society</a> </h1>
 
 <h3 align="center"><a target="_blank" href="https://astronomy-pic-daily.netlify.app/">Astronomy Picture of the Day with NASA API Integration </a></h3>
 
