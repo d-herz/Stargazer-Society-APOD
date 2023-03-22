@@ -20,8 +20,9 @@ Historical imagery is also available going all the way back to June 16th, 1995.
 Additional features include switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created using CSS3 by way of TailwindCSS and daisyUI. 
 </p>
 
+<h4 align="left">Acknowledgement:</h4>
 <p align="left">
-Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project.
+The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and the NASA Open API Project.
 </p>
 
 <h3 align="left">Example Screenshots:</h3>
