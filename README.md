@@ -7,10 +7,12 @@
 
 <h3 align="left">About this project:</h3>
 <p align="left">
-Discover the cosmos! Each day a different image or photograph of our fascinating universe is showcased along with a brief explanation written by a professional astronomer.<br>
+Discover the cosmos! Daily astronomy pictures featuring NASA API integration. Built with pure HTML, JavaScript, and Tailwind CSS.
+
+Each day a different image of the universe is showcased along with a brief explanation written by a professional astronomer.<br>
+Historical imagery is also available going all the way back to June 16th, 1995.
 </p>
 <p align="left">
-Enjoy an amazing image every day, or spend hours perusing historical images via the provided date form. Thanks to the NASA APOD API, users can enjoy featured images going back as far as June 16th, 1995!
 </p>
 
 <p align="left">
