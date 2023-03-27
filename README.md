@@ -10,14 +10,10 @@
 Discover the cosmos! Daily astronomy pictures featuring NASA API integration. Built with pure HTML, JavaScript, and Tailwind CSS.
 
 Each day a different image of the universe is showcased along with a brief explanation written by a professional astronomer.<br>
-
-Historical imagery is also available going all the way back to June 16th, 1995.
-</p>
-<p align="left">
 </p>
 
 <p align="left">
-Additional features include switchable themes for 'light', 'dark', and other fun space-oriented themes. The styling was created using CSS3 by way of TailwindCSS and daisyUI. 
+The app interface includes a form for searching through historical imagery which can be viewed as far back as June 16th, 1995. Also featured are user togglable themes and custom styling created with Tailwind CSS.
 </p>
 
 <h3 align="left">Acknowledgement:</h3>
@@ -45,8 +41,8 @@ The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and
 <h3 align="left">Quick facts about this project:</h3>
 <p align="left">
 <ul>
-  <li> Built with HTML5, CSS3, & JavaScript</li>
-  <li> TailwindCSS, daisyUI, and Node/NPM</li>
+  <li> Built with HTML, CSS, & JavaScript</li>
+  <li> Tailwind CSS, DaisyUI, and Node/NPM</li>
   <li> Astronomy Pictures provided by <a href="https://api.nasa.gov//">NASA's Open API</a> project</li>
 
 </ul>
@@ -57,7 +53,7 @@ The Astronomy Picture of the Day (APOD) is based upon work supported by NASA and
 <p align="left">
 I've recently added:
 <ul>
-<li>User Switchable Display Themes</li>
+<li>User togglable themes</li>
 <li>Date form for retrieving historical images</li>
 <!----- <li> </li> ---->
 </ul>
